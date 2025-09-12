@@ -8,15 +8,20 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-serif: "Times New Roman", Times, "Liberation Serif", serif;
+  --font-mono: "Courier New", Courier, monospace;
+}
+
+/* Apply Times New Roman to all elements */
+* {
+  font-family: "Times New Roman", Times, "Liberation Serif", serif;
 }
 
 /* Ensure light mode by default */
 body {
   background: #ffffff;
   color: #171717;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Times New Roman", Times, "Liberation Serif", serif;
   line-height: 1.6;
 }
 
