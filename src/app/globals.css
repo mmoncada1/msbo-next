@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -8,20 +9,22 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-serif: "Times New Roman", Times, "Liberation Serif", serif;
-  --font-mono: "Courier New", Courier, monospace;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "SF Mono", "Monaco", "Inconsolata", "Roboto Mono", "Courier New", Courier, monospace;
 }
 
-/* Apply Times New Roman to all elements */
+/* Apply Inter font to all elements */
 * {
-  font-family: "Times New Roman", Times, "Liberation Serif", serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Ensure light mode by default */
 body {
   background: #ffffff;
   color: #171717;
-  font-family: "Times New Roman", Times, "Liberation Serif", serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
 }
 
@@ -30,11 +33,46 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Typography refinements */
+h1, h2, h3, h4, h5, h6 {
+  font-feature-settings: 'kern';
+  letter-spacing: -0.015em;
+}
+
+/* Tabular numbers for statistics */
+.tabular-nums {
+  font-feature-settings: 'tnum';
+  font-variant-numeric: tabular-nums;
+}
+
 /* Custom button styles */
 .btn-primary {
-  @apply bg-blue-600 text-white hover:bg-blue-700 px-6 py-3 rounded-lg font-medium transition-colors;
+  @apply bg-black text-white hover:bg-gray-800 px-6 py-3 font-medium transition-all duration-300;
 }
 
 .btn-secondary {
-  @apply bg-gray-100 text-gray-900 hover:bg-gray-200 px-6 py-3 rounded-lg font-medium transition-colors;
+  @apply bg-white text-gray-900 border border-gray-300 hover:border-gray-900 px-6 py-3 font-medium transition-all duration-300;
+}
+
+/* Image optimization */
+img {
+  image-rendering: -webkit-optimize-contrast;
 }
