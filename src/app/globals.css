@@ -76,3 +76,15 @@ h1, h2, h3, h4, h5, h6 {
 img {
   image-rendering: -webkit-optimize-contrast;
 }
+
+/* Ensure proper text wrapping */
+p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Prevent overly narrow containers */
+.text-container {
+  min-width: 280px;
+}

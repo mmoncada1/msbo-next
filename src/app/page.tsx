@@ -11,13 +11,13 @@ export default function Home() {
 
       {/* Hero Section - Citadel Style */}
       <section className="relative bg-black text-white overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-transparent z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40 z-10"></div>
         <div className="absolute inset-0">
           <Image
             src="/MSBO 2025 Recruitment (1) (1).jpg"
             alt="MSBO Team"
             fill
-            className="object-cover object-center opacity-60"
+            className="object-cover object-center opacity-85"
             priority
           />
         </div>
@@ -90,13 +90,13 @@ export default function Home() {
       </section>
 
       {/* About Section - Citadel Style */}
-      <section className="py-32 bg-gray-50">
+      <section className="py-20 lg:py-32 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <SlideInLeft>
-              <div className="lg:col-span-5">
+              <div className="pr-0 lg:pr-8">
                 <div className="w-16 h-0.5 bg-gray-900 mb-8"></div>
-                <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-10 leading-tight">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-gray-900 mb-8 lg:mb-10 leading-[1.1] tracking-tight">
                   Welcome to MSBO
                 </h2>
                 <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
@@ -114,9 +114,9 @@ export default function Home() {
                 <div className="mt-10">
                   <Link 
                     href="/about"
-                    className="inline-flex items-center text-gray-900 hover:text-black group"
+                    className="inline-flex items-center text-gray-900 hover:text-black group text-lg font-medium"
                   >
-                    <span className="text-lg font-medium">Learn more about our mission</span>
+                    <span>Learn more about our mission</span>
                     <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
                     </svg>
@@ -125,14 +125,14 @@ export default function Home() {
               </div>
             </SlideInLeft>
             <SlideInRight>
-              <div className="lg:col-span-7">
+              <div>
                 <div className="relative">
                   <Image
                     src="/MSBO 2025 Recruitment (2) (1).jpg"
                     alt="MSBO Team Meeting"
                     width={800}
                     height={600}
-                    className="w-full object-cover"
+                    className="w-full h-auto object-cover"
                   />
                 </div>
               </div>
@@ -148,28 +148,29 @@ export default function Home() {
             <div className="text-center mb-20">
               <div className="w-16 h-0.5 bg-gray-900 mx-auto mb-8"></div>
               <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6">
-                What We Do
+                Our Pillars
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                Three core pillars that define our commitment to excellence and member development
+                MSBO was founded on four principles that serve as the North Star of our organization
               </p>
             </div>
           </FadeInUp>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-12 lg:gap-16">
             <FadeInUp delay={0}>
-              <div className="group">
-                <div className="mb-8">
-                  <div className="w-1 h-16 bg-gray-200 group-hover:bg-gray-900 transition-colors duration-300 mb-6"></div>
-                  <h3 className="text-2xl font-light text-gray-900 mb-6 tracking-tight">Professional Development</h3>
+              <div className="group flex">
+                <div className="w-1 h-16 bg-gray-200 group-hover:bg-gray-900 transition-colors duration-300 mr-8 mt-2 flex-shrink-0"></div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-light text-gray-900 mb-6 tracking-tight">Investing</h3>
                   <p className="text-gray-600 leading-relaxed mb-8">
-                    MSBO helps prepare members for unparalleled recruiting opportunities through 
-                    workshops, alumni mentorship, and private recruiting events.
+                    We employ a diligent approach to generating returns on a risk-adjusted basis through 
+                    top-down and bottom-up fundamental analysis. Teams across various sectors pitch ideas 
+                    that are incorporated into MSBO's portfolio.
                   </p>
                   <Link 
-                    href="/placement" 
+                    href="/about" 
                     className="inline-flex items-center text-gray-900 hover:text-black group/link"
                   >
-                    <span className="text-sm font-medium uppercase tracking-wide">Our Placement</span>
+                    <span className="text-sm font-medium uppercase tracking-wide">Learn More</span>
                     <svg className="ml-2 w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
                     </svg>
@@ -177,14 +178,15 @@ export default function Home() {
                 </div>
               </div>
             </FadeInUp>
-            <FadeInUp delay={200}>
-              <div className="group">
-                <div className="mb-8">
-                  <div className="w-1 h-16 bg-gray-200 group-hover:bg-gray-900 transition-colors duration-300 mb-6"></div>
-                  <h3 className="text-2xl font-light text-gray-900 mb-6 tracking-tight">Investment Management</h3>
+            <FadeInUp delay={100}>
+              <div className="group flex">
+                <div className="w-1 h-16 bg-gray-200 group-hover:bg-gray-900 transition-colors duration-300 mr-8 mt-2 flex-shrink-0"></div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-light text-gray-900 mb-6 tracking-tight">Education</h3>
                   <p className="text-gray-600 leading-relaxed mb-8">
-                    We actively invest through our eight sector desks, providing hands-on 
-                    experience in equity research and portfolio management.
+                    We pride ourselves on our education program, teaching essential concepts in markets 
+                    and investing. New members participate in weekly sessions covering Financial Markets, 
+                    Fundamental Analysis, Accounting, and Valuation.
                   </p>
                   <Link 
                     href="/about" 
@@ -198,20 +200,43 @@ export default function Home() {
                 </div>
               </div>
             </FadeInUp>
-            <FadeInUp delay={400}>
-              <div className="group">
-                <div className="mb-8">
-                  <div className="w-1 h-16 bg-gray-200 group-hover:bg-gray-900 transition-colors duration-300 mb-6"></div>
-                  <h3 className="text-2xl font-light text-gray-900 mb-6 tracking-tight">Community Impact</h3>
+            <FadeInUp delay={200}>
+              <div className="group flex">
+                <div className="w-1 h-16 bg-gray-200 group-hover:bg-gray-900 transition-colors duration-300 mr-8 mt-2 flex-shrink-0"></div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-light text-gray-900 mb-6 tracking-tight">Philanthropy</h3>
                   <p className="text-gray-600 leading-relaxed mb-8">
-                    Beyond investing, we focus on giving back to the community and building 
-                    lasting relationships among members and alumni.
+                    Our purpose goes beyond investing. We're committed to bettering the University of Michigan, 
+                    Ann Arbor, and Detroit communities through volunteering, teaching personal finance, 
+                    and fundraising initiatives.
                   </p>
                   <Link 
-                    href="/team" 
+                    href="/about" 
                     className="inline-flex items-center text-gray-900 hover:text-black group/link"
                   >
-                    <span className="text-sm font-medium uppercase tracking-wide">Our Team</span>
+                    <span className="text-sm font-medium uppercase tracking-wide">Our Impact</span>
+                    <svg className="ml-2 w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </FadeInUp>
+            <FadeInUp delay={300}>
+              <div className="group flex">
+                <div className="w-1 h-16 bg-gray-200 group-hover:bg-gray-900 transition-colors duration-300 mr-8 mt-2 flex-shrink-0"></div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-light text-gray-900 mb-6 tracking-tight">Professional Development</h3>
+                  <p className="text-gray-600 leading-relaxed mb-8">
+                    Our members work at top firms worldwide across various industries. We provide strong 
+                    alumni pipelines, exclusive speaker opportunities, recruiting events, and training 
+                    in resume crafting, networking, and interviewing.
+                  </p>
+                  <Link 
+                    href="/placement" 
+                    className="inline-flex items-center text-gray-900 hover:text-black group/link"
+                  >
+                    <span className="text-sm font-medium uppercase tracking-wide">Our Placement</span>
                     <svg className="ml-2 w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
                     </svg>
@@ -234,34 +259,32 @@ export default function Home() {
           />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <SlideInLeft>
-              <div className="lg:col-span-7">
-                <div className="max-w-4xl">
-                  <div className="w-16 h-0.5 bg-white mb-8"></div>
-                  <h2 className="text-4xl md:text-5xl font-light mb-12 leading-tight">
-                    The MSBO Experience
-                  </h2>
-                  <blockquote className="text-xl md:text-2xl leading-relaxed font-light text-gray-200 mb-12">
-                    "MSBO differs from other Michigan investment clubs due to the immense value 
-                    placed on culture and new member engagement. It provides an exceptional educational 
-                    experience not found in the classroom, with members playing a critical role from 
-                    day one by contributing to pitch theses, valuation models, or discussions. My 
-                    involvement helped cultivate a family of like-minded individuals from which many 
-                    of my closest friends at Michigan were found."
-                  </blockquote>
-                  <div className="flex items-center">
-                    <div className="w-12 h-0.5 bg-gray-400 mr-6"></div>
-                    <div>
-                      <div className="text-lg font-medium text-white">John Fogel</div>
-                      <div className="text-sm text-gray-400 uppercase tracking-wide">MSBO Alumnus</div>
-                    </div>
+              <div className="pr-0 lg:pr-8">
+                <div className="w-16 h-0.5 bg-white mb-8"></div>
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light mb-12 leading-tight">
+                  The MSBO Experience
+                </h2>
+                <blockquote className="text-xl md:text-2xl leading-relaxed font-light text-gray-200 mb-12">
+                  "MSBO differs from other Michigan investment clubs due to the immense value 
+                  placed on culture and new member engagement. It provides an exceptional educational 
+                  experience not found in the classroom, with members playing a critical role from 
+                  day one by contributing to pitch theses, valuation models, or discussions. My 
+                  involvement helped cultivate a family of like-minded individuals from which many 
+                  of my closest friends at Michigan were found."
+                </blockquote>
+                <div className="flex items-center">
+                  <div className="w-12 h-0.5 bg-gray-400 mr-6"></div>
+                  <div>
+                    <div className="text-lg font-medium text-white">John Fogel</div>
+                    <div className="text-sm text-gray-400 uppercase tracking-wide">MSBO Alumnus</div>
                   </div>
                 </div>
               </div>
             </SlideInLeft>
             <SlideInRight>
-              <div className="lg:col-span-5">
+              <div>
                 <div className="relative">
                   <Image
                     src="/MSBO 2025 Recruitment (4) (1).jpg"
@@ -280,8 +303,8 @@ export default function Home() {
       {/* Call to Action Section - Citadel Style */}
       <section className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-            <div className="lg:col-span-5">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div>
               <Image
                 src="/MSBO 2025 Recruitment (5) (1).jpg"
                 alt="Join MSBO"
@@ -290,8 +313,8 @@ export default function Home() {
                 className="w-full object-cover"
               />
             </div>
-            <div className="lg:col-span-7">
-              <div className="max-w-2xl lg:ml-16">
+            <div className="pl-0 lg:pl-8">
+              <div className="max-w-2xl">
                 <FadeInUp>
                   <div className="w-16 h-0.5 bg-gray-900 mb-8"></div>
                   <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-8 leading-tight">
@@ -336,8 +359,8 @@ export default function Home() {
       {/* Footer - Citadel Style */}
       <footer className="bg-black text-white py-20 border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-            <div className="lg:col-span-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+            <div className="md:col-span-2">
               <h3 className="text-2xl font-light mb-8 tracking-tight">Michigan Stocks and Bonds</h3>
               <p className="text-gray-400 text-lg leading-relaxed max-w-md mb-8">
                 A highly selective, leading undergraduate investment organization at the University of Michigan.
@@ -348,7 +371,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="lg:col-span-3">
+            <div>
               <h4 className="text-sm font-medium uppercase tracking-wide text-gray-500 mb-6">Quick Links</h4>
               <nav className="space-y-3">
                 <Link href="/about" className="block text-gray-400 hover:text-white transition-colors">
@@ -365,7 +388,7 @@ export default function Home() {
                 </Link>
               </nav>
             </div>
-            <div className="lg:col-span-3">
+            <div>
               <h4 className="text-sm font-medium uppercase tracking-wide text-gray-500 mb-6">Connect</h4>
               <div className="space-y-3">
                 <a href="#" className="block text-gray-400 hover:text-white transition-colors">
