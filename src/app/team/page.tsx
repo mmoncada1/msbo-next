@@ -400,11 +400,8 @@ export default function Team() {
                 © 2025 Michigan Stocks and Bonds. All rights reserved.
               </p>
               <div className="flex space-x-6 mt-4 md:mt-0">
-                <a href="#" className="text-gray-500 hover:text-gray-400 text-sm transition-colors">
-                  Privacy Policy
-                </a>
-                <a href="#" className="text-gray-500 hover:text-gray-400 text-sm transition-colors">
-                  Terms of Service
+                <a href="https://sitesbymiguel.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-400 text-sm transition-colors">
+                  Powered by SitesByMiguel
                 </a>
               </div>
             </div>
