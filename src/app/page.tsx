@@ -157,92 +157,80 @@ export default function Home() {
           </FadeInUp>
           <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-12 lg:gap-16">
             <FadeInUp delay={0}>
-              <div className="group flex">
+              <Link href="/about" className="group flex cursor-pointer h-full">
                 <div className="w-1 h-16 bg-gray-200 group-hover:bg-gray-900 transition-colors duration-300 mr-8 mt-2 flex-shrink-0"></div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-light text-gray-900 mb-6 tracking-tight">Investing</h3>
-                  <p className="text-gray-600 leading-relaxed mb-8">
+                <div className="flex-1 flex flex-col">
+                  <h3 className="text-2xl font-light text-gray-900 mb-6 tracking-tight group-hover:text-black transition-colors">Investing</h3>
+                  <p className="text-gray-600 leading-relaxed mb-8 hyphens-none break-words group-hover:text-gray-700 transition-colors flex-grow">
                     We employ a diligent approach to generating returns on a risk-adjusted basis through 
                     top-down and bottom-up fundamental analysis. Teams across various sectors pitch ideas 
                     that are incorporated into MSBO's portfolio.
                   </p>
-                  <Link 
-                    href="/about" 
-                    className="inline-flex items-center text-gray-900 hover:text-black group/link"
-                  >
+                  <div className="inline-flex items-center text-gray-900 group-hover:text-black transition-colors mt-auto">
                     <span className="text-sm font-medium uppercase tracking-wide">Learn More</span>
-                    <svg className="ml-2 w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
                     </svg>
-                  </Link>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </FadeInUp>
             <FadeInUp delay={100}>
-              <div className="group flex">
+              <Link href="/about" className="group flex cursor-pointer h-full">
                 <div className="w-1 h-16 bg-gray-200 group-hover:bg-gray-900 transition-colors duration-300 mr-8 mt-2 flex-shrink-0"></div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-light text-gray-900 mb-6 tracking-tight">Education</h3>
-                  <p className="text-gray-600 leading-relaxed mb-8">
+                <div className="flex-1 flex flex-col">
+                  <h3 className="text-2xl font-light text-gray-900 mb-6 tracking-tight group-hover:text-black transition-colors">Education</h3>
+                  <p className="text-gray-600 leading-relaxed mb-8 hyphens-none break-words group-hover:text-gray-700 transition-colors flex-grow">
                     We pride ourselves on our education program, teaching essential concepts in markets 
                     and investing. New members participate in weekly sessions covering Financial Markets, 
                     Fundamental Analysis, Accounting, and Valuation.
                   </p>
-                  <Link 
-                    href="/about" 
-                    className="inline-flex items-center text-gray-900 hover:text-black group/link"
-                  >
+                  <div className="inline-flex items-center text-gray-900 group-hover:text-black transition-colors mt-auto">
                     <span className="text-sm font-medium uppercase tracking-wide">About Us</span>
-                    <svg className="ml-2 w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
                     </svg>
-                  </Link>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </FadeInUp>
             <FadeInUp delay={200}>
-              <div className="group flex">
+              <Link href="/about" className="group flex cursor-pointer h-full">
                 <div className="w-1 h-16 bg-gray-200 group-hover:bg-gray-900 transition-colors duration-300 mr-8 mt-2 flex-shrink-0"></div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-light text-gray-900 mb-6 tracking-tight">Philanthropy</h3>
-                  <p className="text-gray-600 leading-relaxed mb-8">
+                <div className="flex-1 flex flex-col">
+                  <h3 className="text-2xl font-light text-gray-900 mb-6 tracking-tight group-hover:text-black transition-colors">Philanthropy</h3>
+                  <p className="text-gray-600 leading-relaxed mb-8 hyphens-none break-words group-hover:text-gray-700 transition-colors flex-grow">
                     Our purpose goes beyond investing. We're committed to bettering the University of Michigan, 
                     Ann Arbor, and Detroit communities through volunteering, teaching personal finance, 
                     and fundraising initiatives.
                   </p>
-                  <Link 
-                    href="/about" 
-                    className="inline-flex items-center text-gray-900 hover:text-black group/link"
-                  >
+                  <div className="inline-flex items-center text-gray-900 group-hover:text-black transition-colors mt-auto">
                     <span className="text-sm font-medium uppercase tracking-wide">Our Impact</span>
-                    <svg className="ml-2 w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
                     </svg>
-                  </Link>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </FadeInUp>
             <FadeInUp delay={300}>
-              <div className="group flex">
+              <Link href="/placement" className="group flex cursor-pointer h-full">
                 <div className="w-1 h-16 bg-gray-200 group-hover:bg-gray-900 transition-colors duration-300 mr-8 mt-2 flex-shrink-0"></div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-light text-gray-900 mb-6 tracking-tight">Professional Development</h3>
-                  <p className="text-gray-600 leading-relaxed mb-8">
+                <div className="flex-1 flex flex-col">
+                  <h3 className="text-2xl font-light text-gray-900 mb-6 tracking-tight group-hover:text-black transition-colors">Professional Development</h3>
+                  <p className="text-gray-600 leading-relaxed mb-8 hyphens-none break-words group-hover:text-gray-700 transition-colors flex-grow">
                     Our members work at top firms worldwide across various industries. We provide strong 
                     alumni pipelines, exclusive speaker opportunities, recruiting events, and training 
                     in resume crafting, networking, and interviewing.
                   </p>
-                  <Link 
-                    href="/placement" 
-                    className="inline-flex items-center text-gray-900 hover:text-black group/link"
-                  >
+                  <div className="inline-flex items-center text-gray-900 group-hover:text-black transition-colors mt-auto">
                     <span className="text-sm font-medium uppercase tracking-wide">Our Placement</span>
-                    <svg className="ml-2 w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
                     </svg>
-                  </Link>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </FadeInUp>
           </div>
         </div>
