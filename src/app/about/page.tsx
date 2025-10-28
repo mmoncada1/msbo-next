@@ -225,7 +225,7 @@ export default function About() {
               { name: "Special Situations", image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop&auto=format" }
             ].map((sector, index) => (
               <FadeInUp key={sector.name} delay={index * 50}>
-                <div className="group cursor-pointer">
+                <div className="group">
                   <div className="relative mb-6 overflow-hidden">
                     <Image
                       src={sector.image}
