@@ -204,14 +204,14 @@ export default function Placement() {
               </div>
             </SlideInLeft>
             <SlideInRight>
-              <div>
-                <div className="relative">
+              <div className="flex justify-center">
+                <div className="relative w-80 max-w-sm">
                   <Image
                     src="/cropped-Ryan-Bonomi.webp"
                     alt="Ryan Bonomi - MSBO Alumnus"
-                    width={800}
-                    height={1000}
-                    className="w-full h-auto object-cover"
+                    width={400}
+                    height={500}
+                    className="w-full h-auto object-cover rounded-lg"
                     priority
                   />
                 </div>

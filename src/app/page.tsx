@@ -275,11 +275,11 @@ export default function Home() {
               <div>
                 <div className="relative">
                   <Image
-                    src="/MSBO 2025 Recruitment (4) (1).jpg"
-                    alt="MSBO Team Culture"
-                    width={600}
-                    height={800}
-                    className="w-full object-cover"
+                    src="/Jonathan-Fogel-Headshot.webp"
+                    alt="John Fogel - MSBO Alumnus"
+                    width={500}
+                    height={600}
+                    className="w-full object-cover rounded-lg"
                   />
                 </div>
               </div>
