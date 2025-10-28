@@ -340,7 +340,16 @@ export default function Team() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             <div className="md:col-span-2">
-              <h3 className="text-2xl font-light mb-8 tracking-tight">Michigan Stocks and Bonds</h3>
+              <div className="flex items-center space-x-4 mb-8">
+                <Image
+                  src="/MSBO-Logo-White-Transparent-1.webp"
+                  alt="MSBO Logo"
+                  width={50}
+                  height={50}
+                  className="h-12 w-auto"
+                />
+                <h3 className="text-2xl font-light tracking-tight">Michigan Stocks and Bonds</h3>
+              </div>
               <p className="text-gray-400 text-lg leading-relaxed max-w-md mb-8">
                 A highly selective, leading undergraduate investment organization at the University of Michigan.
               </p>

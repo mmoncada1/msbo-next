@@ -1,64 +1,47 @@
 'use client';
 
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import Image from 'next/image';
+import { useState } from 'react';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
-    <nav className={`w-full fixed top-0 z-50 transition-all duration-300 ${
-      isScrolled 
-        ? 'bg-white/95 backdrop-blur-md border-b border-gray-200' 
-        : 'bg-transparent'
-    }`}>
+    <nav className="w-full absolute top-0 z-50 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <Link href="/" className={`text-lg font-light tracking-tight transition-colors ${
-              isScrolled ? 'text-gray-900' : 'text-white'
-            } hover:opacity-80`}>
-              MICHIGAN STOCKS AND BONDS
+            <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+              <Image
+                src="/MSBO-Logo-White-Transparent-1.webp"
+                alt="MSBO Logo"
+                width={40}
+                height={40}
+                className="h-10 w-auto"
+              />
+              <span className="text-lg font-light tracking-tight text-white">
+                MICHIGAN STOCKS AND BONDS
+              </span>
             </Link>
           </div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="flex items-center space-x-12">
-              <Link href="/" className={`text-sm font-medium transition-colors ${
-                isScrolled ? 'text-gray-700 hover:text-black' : 'text-gray-200 hover:text-white'
-              }`}>
+              <Link href="/" className="text-sm font-medium text-gray-200 hover:text-white transition-colors">
                 Home
               </Link>
-              <Link href="/about" className={`text-sm font-medium transition-colors ${
-                isScrolled ? 'text-gray-700 hover:text-black' : 'text-gray-200 hover:text-white'
-              }`}>
+              <Link href="/about" className="text-sm font-medium text-gray-200 hover:text-white transition-colors">
                 About Us
               </Link>
-              <Link href="/team" className={`text-sm font-medium transition-colors ${
-                isScrolled ? 'text-gray-700 hover:text-black' : 'text-gray-200 hover:text-white'
-              }`}>
+              <Link href="/team" className="text-sm font-medium text-gray-200 hover:text-white transition-colors">
                 Team
               </Link>
-              <Link href="/placement" className={`text-sm font-medium transition-colors ${
-                isScrolled ? 'text-gray-700 hover:text-black' : 'text-gray-200 hover:text-white'
-              }`}>
+              <Link href="/placement" className="text-sm font-medium text-gray-200 hover:text-white transition-colors">
                 Placement
               </Link>
-              <Link href="/apply" className={`px-6 py-2 text-sm font-medium transition-all ${
-                isScrolled 
-                  ? 'bg-black text-white hover:bg-gray-800' 
-                  : 'bg-white text-black hover:bg-gray-100'
-              }`}>
+              <Link href="/apply" className="px-6 py-2 text-sm font-medium bg-white text-black hover:bg-gray-100 transition-all">
                 Apply
               </Link>
             </div>
@@ -68,9 +51,7 @@ export default function Navigation() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`transition-colors ${
-                isScrolled ? 'text-gray-700 hover:text-black' : 'text-white hover:text-gray-200'
-              }`}
+              className="text-white hover:text-gray-200 transition-colors"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isOpen ? (
