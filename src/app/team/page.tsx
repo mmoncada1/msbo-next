@@ -51,7 +51,7 @@ export default function Team() {
       email: "klacin@umich.edu",
       linkedin: "https://www.linkedin.com/in/kaan-lacin/",
       image: "/kaan-lacin.webp",
-      bio: "Kaan is a junior from Ann Arbor, Michigan majoring in Business Administration and minoring in Economics. On campus, he is involved in Phi Gamma Nu, Michigan Equity Research Club, and Futsal Club. This past summer, he interned for The Kraft Heinz Company in Chicago, Illinois. This upcoming summer, Kaan will join Ares Management in New York as a Summer Analyst in their U.S. Direct Lending Group. In his free time, he enjoys playing soccer, reading fantasy books, and cheering on his favorite sports team, Real Madrid."
+      bio: "Kaan is a junior from Ann Arbor, Michigan majoring in Business Administration. On campus, he is involved in Phi Gamma Nu, Michigan Private Credit Group, and Futsal Club. This past summer, he interned for The Kraft Heinz Company in Chicago, Illinois. This upcoming summer, Kaan will join Ares Management in New York as a Summer Analyst in their U.S. Direct Lending Group. In his free time, he enjoys playing soccer, reading fantasy books, and cheering on his favorite sports team, Galatasaray."
     },
     {
       name: "Jared Goodman",
