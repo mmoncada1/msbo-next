@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navigation from "@/components/Navigation";
-import { FadeInUp, SlideInLeft, SlideInRight } from "@/components/ScrollAnimations";
+import { FadeInUp } from "@/components/ScrollAnimations";
 
 export default function Team() {
   const executiveBoard = [
@@ -127,7 +127,7 @@ export default function Team() {
               </FadeInUp>
               <FadeInUp delay={600}>
                 <p className="text-xl md:text-2xl mb-12 text-gray-200 max-w-3xl leading-relaxed font-light">
-                  Meet the exceptional leaders and dedicated analysts who drive MSBO's success 
+                  Meet the exceptional leaders and dedicated analysts who drive MSBO&apos;s success 
                   and embody our commitment to excellence in investment education.
                 </p>
               </FadeInUp>
@@ -146,7 +146,7 @@ export default function Team() {
                 2025 Executive Board
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                The leadership team guiding MSBO's strategic direction and organizational excellence
+                The leadership team guiding MSBO&apos;s strategic direction and organizational excellence
               </p>
             </div>
           </FadeInUp>
@@ -306,7 +306,7 @@ export default function Team() {
           </FadeInUp>
           <FadeInUp delay={300}>
             <p className="text-xl md:text-2xl text-gray-200 mb-12 leading-relaxed font-light">
-              Become part of Michigan's premier investment organization and develop 
+              Become part of Michigan&apos;s premier investment organization and develop 
               skills that will define your career in finance.
             </p>
           </FadeInUp>

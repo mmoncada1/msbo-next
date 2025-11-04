@@ -34,7 +34,7 @@ export default function Apply() {
               </FadeInUp>
               <FadeInUp delay={600}>
                 <p className="text-xl md:text-2xl mb-12 text-gray-200 max-w-3xl leading-relaxed font-light">
-                  Join Michigan's premier undergraduate investment organization and begin your journey 
+                  Join Michigan&apos;s premier undergraduate investment organization and begin your journey 
                   in finance with our selective Fall 2025 recruitment process.
                 </p>
               </FadeInUp>

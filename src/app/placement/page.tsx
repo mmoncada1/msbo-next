@@ -31,14 +31,6 @@ export default function Placement() {
     { label: "Other Finance Roles", percentage: "5%" }
   ];
 
-  const topFirms = [
-    "Goldman Sachs", "J.P. Morgan", "Morgan Stanley", "Citigroup", "Bank of America",
-    "Lazard", "Moelis & Co.", "Guggenheim Securities", "TD Securities", "RBC Capital Markets",
-    "Blackstone", "KKR", "Apollo Global Management", "Bain Capital", "Carlyle Group",
-    "McKinsey & Company", "Bain & Company", "Boston Consulting Group", "Deloitte", "PwC",
-    "Google", "Microsoft", "Amazon", "Meta", "Apple"
-  ];
-
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -184,15 +176,15 @@ export default function Placement() {
                   Alumni Success Story
                 </h2>
                 <blockquote className="text-xl md:text-2xl leading-relaxed font-light text-gray-200 mb-12">
-                  "As an economics major in LSA, I thought I was at a significant disadvantage 
-                  compared to my BBA peers in Ross when it comes to finance recruiting. MSBO's 
+                  &quot;As an economics major in LSA, I thought I was at a significant disadvantage 
+                  compared to my BBA peers in Ross when it comes to finance recruiting. MSBO&apos;s 
                   extensive education program proved me wrong, covering all of the grounds from the 
                   fundamentals of the markets to complex corporate valuations. MSBO also created a 
                   culture of camaraderie with other likeminded individuals to further that passion for 
                   business, and one where a new member can make a real impact on day one. The 
                   club provided me with the tools to go above and beyond my previous expectations, 
-                  and helped me land a job at Citigroup, which I truly don't think would have been 
-                  possible otherwise."
+                  and helped me land a job at Citigroup, which I truly don&apos;t think would have been 
+                  possible otherwise.&quot;
                 </blockquote>
                 <div className="flex items-center">
                   <div className="w-12 h-0.5 bg-gray-400 mr-6"></div>

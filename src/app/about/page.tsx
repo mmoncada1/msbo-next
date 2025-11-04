@@ -34,7 +34,7 @@ export default function About() {
               </FadeInUp>
               <FadeInUp delay={600}>
                 <p className="text-xl md:text-2xl mb-12 text-gray-200 max-w-3xl leading-relaxed font-light">
-                  Learn about our history, mission, and the principles that guide Michigan's 
+                  Learn about our history, mission, and the principles that guide Michigan&apos;s 
                   premier undergraduate investment organization.
                 </p>
               </FadeInUp>
@@ -51,11 +51,11 @@ export default function About() {
               <div className="pr-0 lg:pr-8">
                 <div className="w-16 h-0.5 bg-gray-900 mb-8"></div>
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-gray-900 mb-8 lg:mb-10 leading-[1.1] tracking-tight">
-                  President's Welcome
+                  President&apos;s Welcome
                 </h2>
                 <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
                   <p>
-                    Welcome to Michigan Stocks and Bonds! My name is Elliott Nederhood and I'm 
+                    Welcome to Michigan Stocks and Bonds! My name is Elliott Nederhood and I&apos;m 
                     currently the President of MSBO, a premier undergraduate investment club. We pride 
                     ourselves on helping members gain a comprehensive understanding of investing and 
                     prepare for both internship and full-time recruitment across a variety of fields.
@@ -169,7 +169,7 @@ export default function About() {
                 <h3 className="text-3xl font-light text-gray-900 mb-6 tracking-tight">Philanthropy</h3>
                 <p className="text-gray-600 leading-relaxed text-lg">
                   Our purpose goes beyond investing. We are committed to further the betterment of 
-                  the University of Michigan, Ann Arbor, and Detroit community. Whether it's 
+                  the University of Michigan, Ann Arbor, and Detroit community. Whether it&apos;s 
                   volunteering at the Ronald McDonald House, teaching personal finance at Ann Arbor 
                   high schools, or raising money for charitable causes.
                 </p>
