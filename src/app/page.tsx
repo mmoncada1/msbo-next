@@ -162,8 +162,7 @@ export default function Home() {
                 <div className="flex-1 flex flex-col">
                   <h3 className="text-2xl font-light text-gray-900 mb-6 tracking-tight group-hover:text-black transition-colors">Investing</h3>
                   <p className="text-gray-600 leading-relaxed mb-8 hyphens-none break-words group-hover:text-gray-700 transition-colors flex-grow">
-                    We employ a diligent approach to generating returns on a risk-adjusted basis through 
-                    top-down and bottom-up fundamental analysis. Teams across various sectors pitch ideas 
+                    We employ a diligent approach to generating returns on a risk-adjusted basis through fundamental analysis. Teams across various sectors pitch ideas 
                     that are incorporated into MSBO&apos;s portfolio.
                   </p>
                   <div className="inline-flex items-center text-gray-900 group-hover:text-black transition-colors mt-auto">
@@ -200,8 +199,8 @@ export default function Home() {
                 <div className="flex-1 flex flex-col">
                   <h3 className="text-2xl font-light text-gray-900 mb-6 tracking-tight group-hover:text-black transition-colors">Philanthropy</h3>
                   <p className="text-gray-600 leading-relaxed mb-8 hyphens-none break-words group-hover:text-gray-700 transition-colors flex-grow">
-                    Our purpose goes beyond investing. We&apos;re committed to bettering the University of Michigan, 
-                    Ann Arbor, and Detroit communities through volunteering, teaching personal finance, 
+                    Our purpose goes beyond investing. We&apos;re committed to bettering the University of Michigan and 
+                    Ann Arbor communities through volunteering, teaching personal finance, 
                     and fundraising initiatives.
                   </p>
                   <div className="inline-flex items-center text-gray-900 group-hover:text-black transition-colors mt-auto">
@@ -258,7 +257,7 @@ export default function Home() {
                   &quot;MSBO differs from other Michigan investment clubs due to the immense value 
                   placed on culture and new member engagement. It provides an exceptional educational 
                   experience not found in the classroom, with members playing a critical role from 
-                  day one by contributing to pitch theses, valuation models, or discussions. My 
+                  day one by contributing to pitch theses, valuation models, or market discussions. My 
                   involvement helped cultivate a family of like-minded individuals from which many 
                   of my closest friends at Michigan were found.&quot;
                 </blockquote>
