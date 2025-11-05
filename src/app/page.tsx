@@ -257,7 +257,7 @@ export default function Home() {
                   &quot;MSBO differs from other Michigan investment clubs due to the immense value 
                   placed on culture and new member engagement. It provides an exceptional educational 
                   experience not found in the classroom, with members playing a critical role from 
-                  day one by contributing to pitch theses, valuation models, or market discussions. My 
+                  day one by contributing to pitch theses, valuation models, or market-based discussions. My 
                   involvement helped cultivate a family of like-minded individuals from which many 
                   of my closest friends at Michigan were found.&quot;
                 </blockquote>
