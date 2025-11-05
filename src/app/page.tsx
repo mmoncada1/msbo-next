@@ -72,7 +72,7 @@ export default function Home() {
             <FadeInUp delay={200}>
               <div className="group">
                 <div className="text-6xl md:text-7xl font-light text-gray-900 mb-4 tabular-nums tracking-tight">
-                  <CountUp end={100} suffix="+" />
+                  <CountUp end={75} suffix="+" />
                 </div>
                 <div className="text-sm text-gray-500 uppercase tracking-[0.2em] font-medium">Active Members</div>
               </div>
