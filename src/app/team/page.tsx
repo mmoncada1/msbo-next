@@ -35,7 +35,7 @@ export default function Team() {
       email: "bensonn@umich.edu",
       linkedin: "https://www.linkedin.com/in/benson-klein/",
       image: "/benson-klein.webp",
-      bio: "Benson is a junior from Los Angeles, California majoring in Economics and minoring in Philosophy. On campus, he is involved in Alpha Kappa Psi, Wolverine Capital Investments, and The Side Door. This past summer, he worked at Les Belles Perdrix in Bordeaux, France. This upcoming summer, Benson will join Moelis & Co. in New York as an Investment Banking Summer Analyst. In his free time, he enjoys cooking, skiing, and reading."
+      bio: "Benson is a junior from Los Angeles, California majoring in Economics and minoring in Art History. On campus, he is involved in Alpha Kappa Psi, Wolverine Capital Investments, and The Side Door. This past summer, he worked at Les Belles Perdrix in Bordeaux, France. This upcoming summer, Benson will join Moelis & Co. in New York as an Investment Banking Summer Analyst. In his free time, he enjoys cooking, skiing, and reading."
     },
     {
       name: "Olivia Suh",
