@@ -129,9 +129,9 @@ export default function About() {
                 <h3 className="text-3xl font-light text-gray-900 mb-6 tracking-tight">Investing</h3>
                 <p className="text-gray-600 leading-relaxed text-lg">
                   We employ a diligent approach to generating returns on a risk-adjusted basis through 
-                  an investment style relying on top-down and bottom-up fundamental analysis. Through 
+                  fundamental analysis. Through 
                   rigorous research and sourcing of investment ideas, teams across a variety of sectors 
-                  pitch their ideas to the executive board and broader club.
+                  pitch their ideas to the club's membership.
                 </p>
               </div>
             </FadeInUp>
@@ -169,7 +169,7 @@ export default function About() {
                 <h3 className="text-3xl font-light text-gray-900 mb-6 tracking-tight">Philanthropy</h3>
                 <p className="text-gray-600 leading-relaxed text-lg">
                   Our purpose goes beyond investing. We are committed to further the betterment of 
-                  the University of Michigan, Ann Arbor, and Detroit community. Whether it&apos;s 
+                  the University of Michigan and Ann Arbor communities, whether it&apos;s 
                   volunteering at the Ronald McDonald House, teaching personal finance at Ann Arbor 
                   high schools, or raising money for charitable causes.
                 </p>
